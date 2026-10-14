@@ -13,14 +13,14 @@ models:
     tests:
       - dbt_utils.equal_rowcount:
           compare_model: ref('stg_btc_outputs_py')
+
+
   - name: whale_alert
     latest_version: 1
     config:
       contract:
         enforced: true 
     columns:
-      - name: INVOCATION_ID
-        data_type: string
       - name: output_address
         data_type: string
         data_tests:
@@ -34,7 +34,7 @@ models:
     versions:
     
       - v: 1
-        deprecation_date: 2026-01-01
+        deprecation_date: 2027-01-01
         config:
           enabled: true
         # Matches what's above -- nothing more needed
