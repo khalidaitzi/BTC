@@ -13,8 +13,6 @@ models:
     tests:
       - dbt_utils.equal_rowcount:
           compare_model: ref('stg_btc_outputs_py')
-
-
   - name: whale_alert
     latest_version: 1
     config:
