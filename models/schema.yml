@@ -38,7 +38,7 @@ models:
       - v: 1
         deprecation_date: 2026-01-01
         config:
-          enabled: false
+          enabled: true
         # Matches what's above -- nothing more needed
     
       - v: 2
